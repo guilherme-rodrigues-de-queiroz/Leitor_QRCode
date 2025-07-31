@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Leitor_QRCode.MainPage"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Padding="30, 0, 30, 0"
+            Spacing="25">
+            <Label
+                Text="QR Code Scaner"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Certifique-se de que o código QR esteja bem enquadrado e não esteja borrado"
+                FontSize="17"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <Image
+                Source="qrcode.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="QR Code design" />
+
+            <Button
+                x:Name="ScanButton"
+                Text="Scanear"
+                FontSize="17"
+                Clicked="ScanButton_Clicked"
+                SemanticProperties.Hint="Vai para a próxima página"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

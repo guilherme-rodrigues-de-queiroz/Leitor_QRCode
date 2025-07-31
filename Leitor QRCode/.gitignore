@@ -1,0 +1,77 @@
+﻿# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider (JetBrains)
+.idea/
+
+# Build Results
+**/bin/
+**/obj/
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userprefs
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Android specific
+**/build/
+**/Build/
+*.apk
+*.ap_
+
+# iOS/macOS specific
+**/build/
+*.app
+*.xcuserstate
+*.xcworkspace
+*.xcuserdata/
+*.xcuserdatad/
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.project.xcworkspace/
+
+# MAUI-specific
+Platforms/Android/obj/
+Platforms/Android/bin/
+Platforms/iOS/obj/
+Platforms/iOS/bin/
+Platforms/MacCatalyst/obj/
+Platforms/MacCatalyst/bin/
+Platforms/Windows/obj/
+Platforms/Windows/bin/
+
+# Logs
+*.log
+
+# Local environment
+.env
+*.env.*
