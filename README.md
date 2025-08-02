@@ -49,7 +49,6 @@ Leitor QrCode/
 ### Pré-requisitos
 - [Visual Studio 2022/2025](https://visualstudio.microsoft.com/) com a carga de trabalho **.NET MAUI**
 - .NET SDK 7.0 ou superior
-- Windows 10 (build 19041) ou superior
 - Android SDK instalado (para testes em emulador/dispositivo)
 - Emulador Android configurado (opcional, mas recomendado)
 
