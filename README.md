@@ -1,69 +1,215 @@
 # Leitor QRCode
 
-Aplicativo para leitura de Qr Codes desenvolvido em .NET MAUI.
+[English](#en) | [Português](#pt-BR)
+
+---
+
+<a name="pt-BR"></a>
+## 🇧🇷 Português
 
 ## 📋 Descrição
 
-O Leitor QRCode é uma app mobile que faz a leitura de QR Codes e pega o conteúdo copiando para a área de transferência.
+O **Leitor QRCode** é um aplicativo mobile desenvolvido em **.NET MAUI** para leitura de QR Codes.
+
+Após a leitura, o conteúdo do QR Code é automaticamente copiado para a área de transferência do dispositivo, permitindo seu uso imediato em outros aplicativos.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Linguagem:** C# 
-- **Framework:** .NET
-- **Interface:** MAUI (XAML + C#) — multiplataforma (Android, iOS, Windows, macOS)
-- **IDE:** Visual Studio 2022
+* **Linguagem:** C#
+* **Framework:** .NET
+* **Interface:** .NET MAUI (XAML + C#)
+* **Plataformas:** Android, iOS, Windows e macOS
+* **IDE:** Visual Studio 2022
+
+---
 
 ## 📁 Estrutura do Projeto
 
-```
-Leitor QrCode/
+```text
+LeitorQRCode/
 ├── 📁 Platforms/
-│   ├── 📁 Android               # Permissões e configurações exclusivas para Android
-│   ├── 📁 MacCatalyst           # Suporte para execução no macOS via Mac Catalyst
-│   ├── 📁 Tizen                 # Suporte opcional a dispositivos com sistema Tizen (ex: smartwatches Samsung)
-│   ├── 📁 Windows               # Arquivos para suporte à plataforma Windows
-│   └── 📁 IOS                   # Configurações específicas para dispositivos iOS
+│   ├── Android
+│   ├── iOS
+│   ├── MacCatalyst
+│   ├── Tizen
+│   └── Windows
 ├── 📁 Properties/
-│   └── launchSettings.json      # Define os perfis de execução e depuração do projeto           
+│   └── launchSettings.json
 ├── 📁 Resources/
-│   ├── 📁 AppIcon               # Ícones da aplicação para cada plataforma
-│   ├── 📁 Fonts                 # Fontes personalizadas usadas na interface      
-│   ├── 📁 Images                # Imagens utilizadas no app           
-│   ├── 📁 Raw                   # Recursos brutos como arquivos de áudio, vídeo ou texto
-│   ├── 📁 Splash                # ela de carregamento inicial (splash screen)
-│   └── 📁 Styles                # Arquivos de estilo (temas, cores, etc)
-├── App.xaml                     # Define estilos e recursos globais para o app
-├── App.xaml.cs                  # Código de inicialização da aplicação (classe `App`)
-├── AppShell.xaml                # Gerencia a estrutura de navegação da aplicação (como rotas e abas)
-├── AppShell.xaml.cs             # Código relacionado à lógica de navegação definida no `AppShell.xaml`
-├── Leitor QRCode.csproj         # Arquivo de configuração do projeto. Define frameworks, pacotes NuGet, recursos e diretórios incluídos
-├── MainPage.xaml                # Interface da página principal
-├── MainPage.xaml.cs             # Código por trás da `MainPage`, com a lógica de interface e eventos
-├── MauiProgram.cs               # Ponto de entrada do aplicativo. Responsável por configurar serviços, injeção de dependência e inicialização do MAUI
-├── Qrcode.xaml                  # Interface visual da página de leitura/exibição de QR Code
-└── Qrcode.xaml.cs               # Lógica de funcionamento da página `Qrcode.xaml`
+│   ├── AppIcon
+│   ├── Fonts
+│   ├── Images
+│   ├── Raw
+│   ├── Splash
+│   └── Styles
+├── App.xaml
+├── App.xaml.cs
+├── AppShell.xaml
+├── AppShell.xaml.cs
+├── LeitorQRCode.csproj
+├── MainPage.xaml
+├── MainPage.xaml.cs
+├── MauiProgram.cs
+├── Qrcode.xaml
+└── Qrcode.xaml.cs
 ```
 
-## 📦 Instalação e Uso
+---
+
+## 📦 Instalação
 
 ### Pré-requisitos
-- [Visual Studio 2022/2025](https://visualstudio.microsoft.com/) com a carga de trabalho **.NET MAUI**
-- .NET SDK 7.0 ou superior
-- Android SDK instalado (para testes em emulador/dispositivo)
-- Emulador Android configurado (opcional, mas recomendado)
 
-### Como usar
+* Visual Studio 2022 ou superior
+* Carga de trabalho **.NET MAUI**
+* .NET SDK 7.0 ou superior
+* Android SDK (para testes Android)
+* Emulador Android (opcional)
+
+### Como utilizar
+
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/guilherme-rodrigues-de-queiroz/Leitor_QRCode.git
-   ```
-   ```bash
-   cd leitor-qrcode
-   ```
-2. Abra o projeto no Visual Studio.
-3. Selecione a plataforma de destino (Android, Windows, etc.).
-4. Pressione F5 para compilar e executar o aplicativo.
 
----   
+```bash
+git clone https://github.com/guilherme-rodrigues-de-queiroz/Leitor_QRCode.git
+```
 
-**Nota:** Para Android, é necessário conceder permissão de uso da câmera e para iOS, a execução depende de um ambiente Mac com Xcode instalado.
+2. Entre na pasta do projeto:
+
+```bash
+cd Leitor_QRCode
+```
+
+3. Abra a solução no Visual Studio.
+
+4. Escolha a plataforma desejada (Android, Windows, iOS ou macOS).
+
+5. Pressione **F5** para compilar e executar o aplicativo.
+
+---
+
+## ✨ Funcionalidades
+
+* Leitura de QR Codes utilizando a câmera.
+* Cópia automática do conteúdo para a área de transferência.
+* Interface simples e intuitiva.
+* Aplicação multiplataforma com .NET MAUI.
+
+---
+
+## 📝 Observações
+
+* No Android é necessário conceder permissão para uso da câmera.
+* Para executar no iOS é necessário um ambiente macOS com Xcode instalado.
+
+---
+
+## 🏢 Sobre
+
+Este projeto foi desenvolvido como uma aplicação simples e multiplataforma para demonstrar a leitura de QR Codes utilizando **.NET MAUI**, oferecendo uma forma rápida de capturar e copiar informações presentes em códigos QR.
+
+---
+
+<a name="en"></a>
+## 🇺🇸 English
+
+## 📋 Description
+
+**Leitor QRCode** is a mobile application built with **.NET MAUI** for scanning QR Codes.
+
+Once a QR Code is scanned, its content is automatically copied to the device's clipboard, making it easy to paste into other applications.
+
+## 🛠️ Technologies
+
+* **Language:** C#
+* **Framework:** .NET
+* **UI:** .NET MAUI (XAML + C#)
+* **Platforms:** Android, iOS, Windows, and macOS
+* **IDE:** Visual Studio 2022
+
+---
+
+## 📁 Project Structure
+
+```text
+LeitorQRCode/
+├── 📁 Platforms/
+│   ├── Android
+│   ├── iOS
+│   ├── MacCatalyst
+│   ├── Tizen
+│   └── Windows
+├── 📁 Properties/
+│   └── launchSettings.json
+├── 📁 Resources/
+│   ├── AppIcon
+│   ├── Fonts
+│   ├── Images
+│   ├── Raw
+│   ├── Splash
+│   └── Styles
+├── App.xaml
+├── App.xaml.cs
+├── AppShell.xaml
+├── AppShell.xaml.cs
+├── LeitorQRCode.csproj
+├── MainPage.xaml
+├── MainPage.xaml.cs
+├── MauiProgram.cs
+├── Qrcode.xaml
+└── Qrcode.xaml.cs
+```
+
+---
+
+## 📦 Installation
+
+### Requirements
+
+* Visual Studio 2022 or later
+* .NET MAUI workload installed
+* .NET SDK 7.0 or later
+* Android SDK (for Android testing)
+* Android Emulator (optional)
+
+### Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/guilherme-rodrigues-de-queiroz/Leitor_QRCode.git
+```
+
+2. Open the project folder:
+
+```bash
+cd Leitor_QRCode
+```
+
+3. Open the solution in Visual Studio.
+
+4. Select the target platform (Android, Windows, iOS, or macOS).
+
+5. Press **F5** to build and run the application.
+
+---
+
+## ✨ Features
+
+* Scan QR Codes using the device camera.
+* Automatically copy scanned content to the clipboard.
+* Simple and intuitive user interface.
+* Cross-platform application built with .NET MAUI.
+
+---
+
+## 📝 Notes
+
+* Camera permission is required on Android devices.
+* Running the application on iOS requires macOS with Xcode installed.
+
+---
+
+## 🏢 About
+
+This project was developed as a lightweight cross-platform application demonstrating QR Code scanning with **.NET MAUI**. Its goal is to provide a fast and convenient way to capture QR Code content and automatically copy it to the clipboard.
